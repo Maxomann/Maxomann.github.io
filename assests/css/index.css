@@ -1,0 +1,35 @@
+﻿header, nav, section, footer, article, aside {
+    display: block;
+}
+
+html {
+    background-color: white;
+}
+
+body {
+    background-color: #00f7ff;
+    width: 1024px;
+    margin: 0px auto;
+    padding: 5px;
+    text-align: left;
+}
+
+header {
+    background-color: green;
+}
+
+nav {
+    background-color: orange;
+    width: 200px;
+    float: left;
+    display: table;
+}
+
+article {
+    background-color: yellowgreen;
+    display: table;
+}
+
+footer {
+    background-color: deepskyblue;
+}
