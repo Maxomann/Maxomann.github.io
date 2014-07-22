@@ -69,6 +69,8 @@ article {
     background-color: #aeaeae;
     border-radius: 15px;
     box-shadow: 0px 0px 5px #888;
+
+    border: 3px solid #585858;
 }
 
 article *{
