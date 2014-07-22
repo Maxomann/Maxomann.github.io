@@ -71,6 +71,7 @@ a:hover{
 /* article */
 article {
     margin-top:30px;
+    padding-bottom:30px;
     margin-left: 165px;
     width: 700px;
     display: table;
@@ -96,4 +97,14 @@ footer {
     text-align: center;
     color: #aeaeae;
     font-size: 18px;
+}
+
+
+
+/* contact form */
+.contactForm{
+    width:300px;
+}
+textarea.contactForm{
+    height:200px;
 }
