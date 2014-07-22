@@ -1,7 +1,7 @@
 ﻿html {
     color: black;
     background-color: white;
-    font-family: Myriad Pro;
+    font-family: "Myriad Pro", "Times New Roman", "Arial";
 }
 
 body {
@@ -38,6 +38,14 @@ nav {
     margin-left:-5%;
     margin-bottom: 80px;
     background-color:green;
+
+    border-top-style:solid;
+    border-top-width:3px;
+    border-top-color: #585858;
+
+    border-bottom-style:solid;
+    border-bottom-width:3px;
+    border-bottom-color: #585858;
 }
 
 nav a{
