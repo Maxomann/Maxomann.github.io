@@ -7,6 +7,9 @@
 body {
 	margin:50px 0px; padding:0px;
 	text-align:center;
+    width:100%;
+    overflow-x:hidden;
+    overflow-y:auto;
 }
 
 /* Header */
@@ -14,25 +17,42 @@ header{
     margin-bottom:60px;
 }
 
+#headerImage{
+    position:absolute;
+    left:0px;
+    right:0px;
+    top:0px;
+    margin:auto;
+    z-index:1;
+}
+
 #headerIcon {
+    position:relative;
     width: 180px;
     height: 180px;
     margin-top:40px;
+    z-index:5;
 }
 
 #headerKG {
+    position:relative;
     font-size: 78.35px;
     color: #585858;
+    z-index:5;
 }
 
 #headerPro {
+    position:relative;
     font-size: 39.5px;
     color: #aeaeae;
+    z-index:5;
 }
 
 
 /* navigation */
 nav {
+    z-index:10;
+
     color: #aeaeae;
     margin-left:-5%;
     margin-bottom: 80px;

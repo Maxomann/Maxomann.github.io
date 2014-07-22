@@ -7,9 +7,31 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="assets/icon64.ico">
 
+
+    <script>
+        function resizeBanner() {
+            //scale the height of the background image, so it fits between top and navigationBar
+            var nav = document.getElementById('nav').getBoundingClientRect();
+            var image = document.getElementById('headerImage');
+            image.style.height = Math.round(nav.top - image.getBoundingClientRect().top).toString() + 'px';
+
+            //if the image is larger than the navigation bar (mostly mobile devices),
+            //move the image to the left so it zooms to the center
+            if (nav.width < image.width) {
+                image.style.left = -Math.round((image.width - nav.width) / 2).toString() + 'px';
+            }
+            else {
+                image.style.left = '0px';
+            }
+        }
+    </script>
+
+
+
 </head>
 <body>
     <header>
+        <img id="headerImage" alt="background image" src="assets/backgroundHeader.png" />
         <img id="headerIcon" alt="logo" src="assets/icon512.png" />
         <p id="headerKG">Kay Gonschior</p>
         <p id="headerPro">- Programmer -</p>
@@ -28,5 +50,12 @@
 
     </article>
     <footer><p>&#169;2014 Kay Gonschior --- <a href="impressum.html#nav">Impressum</a> --- <a href="#nav">&uarr;top</a></p></footer>
+
+
+    <script>
+        window.addEventListener('resize', resizeBanner);
+        resizeBanner();
+    </script>
+
 </body>
 </html>
