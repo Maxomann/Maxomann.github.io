@@ -64,13 +64,12 @@ a:hover{
 article {
     margin-left:20%;
     margin-right:20%;
-    padding-top:20px;
-    padding-bottom:30px;
     background-color: #aeaeae;
     border-radius: 15px;
     box-shadow: 0px 0px 5px #888;
 
     border: 3px solid #585858;
+    margin-bottom: 80px;
 }
 
 article *{
@@ -82,6 +81,8 @@ article *{
     position:relative;
     margin-left:15px;
     margin-right:15px;
+    margin-top:40px;
+    margin-bottom:40px;
     color: #1a1a1a;
     font-size: 20px;
     text-align:left;
@@ -90,5 +91,18 @@ article *{
 footer {
     text-align: center;
     color: #aeaeae;
+
     font-size: 18px;
+}
+
+footer p{
+    background-color:green;
+
+    border-top-style:solid;
+    border-top-width:3px;
+    border-top-color: #585858;
+
+    border-bottom-style:solid;
+    border-bottom-width:3px;
+    border-bottom-color: #585858;
 }
