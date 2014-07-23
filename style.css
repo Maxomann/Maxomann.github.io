@@ -1,7 +1,7 @@
 ﻿html {
     color: black;
     background-color: #585858;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif/*"Myriad Pro", "Times New Roman", "Arial"*/;
+    /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif*//*"Myriad Pro", "Times New Roman", "Arial"*/;
     background-color:#F5F5F5;
 }
 
@@ -10,6 +10,7 @@ body {
 	text-align: center;
     /*background-image: url(assets/backgroundBody2.png);*/
     background-color:#F5F5F5;
+    font-family:"Myriad Pro", "Times New Roman", "Arial", "sans-serif";
 }
 
 /* Header */
@@ -18,7 +19,6 @@ header{
     background-image: url(assets/backgroundHeader.jpg);
     background-position: bottom center;
     background-size:auto 900px;
-    font-family:"Myriad Pro", "Times New Roman", "Arial";
 }
 
 #headerIcon {
@@ -79,14 +79,15 @@ nav {
     z-index:10;
     background-color:#8b8b8b;
     visibility:hidden;
+    font-family:"Myriad Pro", "Times New Roman", "Arial";
     font-size:40px;
+    font-weight:bold;
 
     border-radius:5px;
     border: 2px solid #4f4f4f;
 }
 
 #innerNav a{
-    font-weight:bold;
     color: #4f4f4f;
 }
 #innerNav a:hover{
@@ -139,7 +140,7 @@ article {
 #button_down{
     width:120px;
     margin-top:20px;
-    margin-bottom:100px;
+    margin-bottom:85px;
 }
 
 article *{
@@ -169,6 +170,7 @@ article *{
 /* ---CONTENT_DESIGN_OPTIONS_END--- */
 
 #content h1{
+    margin-bottom:30px;
     background-color:green;
     -webkit-box-shadow: 0px 5px 11px -5px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 5px 11px -5px rgba(0,0,0,0.75);
