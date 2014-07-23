@@ -1,12 +1,13 @@
 ﻿html {
     color: black;
-    background-color: white;
+    background-color: #585858;
     font-family: "Myriad Pro", "Times New Roman", "Arial";
 }
 
 body {
 	margin:0px 0px; padding:0px;
 	text-align: center;
+    background-image: url(assets/backgroundBody2.png);
 }
 
 /* Header */
