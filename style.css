@@ -83,7 +83,7 @@ nav {
     font-size:40px;
     font-weight:bold;
 
-    border-radius:5px;
+    border-radius:3px;
     border: 2px solid #4f4f4f;
 }
 
@@ -111,6 +111,16 @@ nav {
     width:100px;
 }
 #button_navigation:hover{
+    cursor: pointer;
+}
+#button_mail{
+    position:fixed;
+    top:130px;
+    left:20px;
+    z-index:9;
+    width:100px;
+}
+#button_mail:hover{
     cursor: pointer;
 }
 
