@@ -34,7 +34,7 @@ header{
     font-size: 78.35px;
     color: #585858;
     z-index:5;
-    width:600px;
+    max-width:600px;
     margin:auto;
     margin-top:100px;
     background-color:white;
@@ -45,7 +45,7 @@ header{
     font-size: 39.5px;
     color: #aeaeae;
     background-color:white;
-    width:300px;
+    max-width:720px;
     margin:auto;
     z-index:5;
 }
