@@ -94,7 +94,7 @@ nav {
     color: #1b1b1b;
 }
 #innerNav a p{
-    padding:5px;
+    padding:10px;
 }
 #innerNav a p:hover{
     border-radius: 5px;
