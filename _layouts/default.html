@@ -7,6 +7,21 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="assets/icon64.ico">
 
+    <script>
+        var navShow = false;
+
+        function onNavigationClick() {
+            if (navShow) {
+                navShow = false;
+                document.getElementById('innerNav').style.visibility = "hidden";
+            }
+            else {
+                navShow = true;
+                document.getElementById('innerNav').style.visibility = "visible";
+            }
+        }
+    </script>
+
 </head>
 <body>
     <header>
@@ -16,19 +31,29 @@
         <p id="headerPro">- Programmer -</p>
     </header>
     <nav id="nav">
-        <a href="index.html#nav">Home</a>
-        <a href="blog.html#nav">Blog</a>
-        <a href="about.html#nav">About me</a>
-        <a href="contact.html#nav">Contact</a>
+        <img id="button_navigation" alt="button_navigation" src="assets/button_navigation.png" onclick="onNavigationClick()" />
+        <div id="innerNav">
+            <a href="index.html"><p>Home</p></a>
+            <a href="blog.html#content"><p>Blog</p></a>
+            <a href="about.html#content"><p>About me</p></a>
+            <a href="contact.html#content"><p>Contact</p></a>
+        </div>
     </nav>
     <article>
+        <a class="smoothScroll" href="#content"><img id="button_down" alt="button_down" src="assets/button_down.png" /></a>
 
         <div id="content">
             {{ content }}
         </div>
 
     </article>
-    <footer><p>&#169;2014 Kay Gonschior --- <a href="impressum.html#nav">Impressum</a> --- <a href="#nav">&uarr;top</a></p></footer>
+    <footer><p>&#169;2014 Kay Gonschior --- <a href="impressum.html#content">Impressum</a> --- <a class="smoothScroll" href="#content">&uarr;top</a></p></footer>
 
+
+
+
+    <!-- include scripts -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="javascript/smoothscroll.js"></script>
 </body>
 </html>
