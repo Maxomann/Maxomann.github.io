@@ -5,16 +5,16 @@
 }
 
 body {
-	margin:50px 0px; padding:0px;
-	text-align:center;
-    width:100%;
-    overflow-x:hidden;
-    overflow-y:auto;
+	margin:0px 0px; padding:0px;
+	text-align: center;
 }
 
 /* Header */
 header{
-    margin-bottom:60px;
+    padding-bottom:60px;
+    background-image: url(assets/backgroundHeader.png);
+    background-position: bottom center;
+    background-size:auto 900px;
 }
 
 #headerImage{
@@ -39,12 +39,19 @@ header{
     font-size: 78.35px;
     color: #585858;
     z-index:5;
+    width:600px;
+    margin:auto;
+    margin-top:100px;
+    background-color:white;
 }
 
 #headerPro {
     position:relative;
     font-size: 39.5px;
     color: #aeaeae;
+    background-color:white;
+    width:300px;
+    margin:auto;
     z-index:5;
 }
 
