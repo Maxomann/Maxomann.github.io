@@ -5,35 +5,7 @@
     <meta charset="utf-8" />
 
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="assets/icon64.ico">
-
-    <script>
-        var navShow = false;
-        var openNav = false;
-
-        function onNavigationClick() {
-            if (navShow) {
-                hideNavigation();
-            }
-            else {
-                openNav = true;
-                showNavigation();
-            }
-        }
-        function showNavigation() {
-            navShow = true;
-            document.getElementById('innerNav').style.visibility = "visible";
-        }
-        function hideNavigation() {
-            if (!openNav) {
-                navShow = false;
-                document.getElementById('innerNav').style.visibility = "hidden";
-            }
-            openNav = false;
-        }
-
-        document.onclick = hideNavigation;
-    </script>
+    <link rel="shortcut icon" href="assets/icon64.ico" />
 
 </head>
 <body>
@@ -69,5 +41,33 @@
     <!-- include scripts -->
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="javascript/smoothscroll.js"></script>
+    <script>
+    var navShow = false;
+    var openNav = false;
+
+    function onNavigationClick() {
+        if (navShow) {
+            hideNavigation();
+        }
+        else {
+            openNav = true;
+            showNavigation();
+        }
+    }
+    function showNavigation() {
+        navShow = true;
+        document.getElementById('innerNav').style.visibility = "visible";
+    }
+    function hideNavigation() {
+        if (!openNav) {
+            navShow = false;
+            document.getElementById('innerNav').style.visibility = "hidden";
+        }
+        openNav = false;
+    }
+
+    document.onclick = hideNavigation;
+    </script>
+
 </body>
 </html>
