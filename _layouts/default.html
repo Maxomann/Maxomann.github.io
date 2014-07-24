@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <title>Kay Gonschior | {{page.title}}</title>
@@ -9,17 +9,30 @@
 
     <script>
         var navShow = false;
+        var openNav = false;
 
         function onNavigationClick() {
             if (navShow) {
+                hideNavigation();
+            }
+            else {
+                openNav = true;
+                showNavigation();
+            }
+        }
+        function showNavigation() {
+            navShow = true;
+            document.getElementById('innerNav').style.visibility = "visible";
+        }
+        function hideNavigation() {
+            if (!openNav) {
                 navShow = false;
                 document.getElementById('innerNav').style.visibility = "hidden";
             }
-            else {
-                navShow = true;
-                document.getElementById('innerNav').style.visibility = "visible";
-            }
+            openNav = false;
         }
+
+        document.onclick = hideNavigation;
     </script>
 
 </head>
