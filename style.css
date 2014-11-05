@@ -13,7 +13,7 @@ body {
 
 /* Header */
 header{
-    padding-bottom:175px;
+    padding-bottom:500px;
     background-image: url(assets/backgroundHeader.jpg);
     background-position: bottom center;
     background-size:auto 900px;
@@ -132,9 +132,9 @@ article {
     margin-bottom:85px;
 }
 
-article *{
+/*article *{
     box-shadow:none;
-}
+}*/
 
 /* content */
 #content{
