@@ -153,14 +153,37 @@ article {
     margin-right:10%;
 }
 
-
+#content img{
+    border-width: 3px;
+    border-style:solid;
+    border-color: #0f850d;
+}
+#content video{
+    border-width: 3px;
+    border-style:solid;
+    border-color: #0f850d;
+}
 
 #content .stdimg{
     width:800px;
+    margin:5px;
 }
 #content .stdvideo{
     width:800px;
+    margin:5px;
 }
+
+#content .stdimgnnobd{
+    width:800px;
+    margin:5px;
+    border-width: 0;
+}
+#content .stdvideonobd{
+    width:800px;
+    margin:5px;
+    border-width: 0;
+}
+
 
 
 #content h1{
