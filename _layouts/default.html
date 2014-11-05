@@ -9,9 +9,8 @@
     <link rel="shortcut icon" href="assets/icon64.ico" />
 
 </head>
-<body>
-    <header>
-        <!--<img id="headerImage" alt="background image" src="assets/backgroundHeader.png" />-->
+<body onload="scaleHeaderToWindowSize()">
+    <header id="headerId">
         <a href="index.html"><img id="headerIcon" alt="logo" src="assets/icon512.png" /></a>
         <a href="index.html">
 			<p id="headerKG">Kay Gonschior</p>
@@ -70,6 +69,13 @@
     }
 
     document.onclick = hideNavigation;
+    
+    function scaleHeaderToWindowSize(){
+        var size = window.innerHeight;
+        var element = document.getElementById('headerId');
+        element.style.paddingBottom = size - element.getBoundingClientRect().height;
+    }
+
     </script>
 
 </body>
