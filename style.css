@@ -153,16 +153,7 @@ article {
     margin-right:10%;
 }
 
-#content img{
-    border-width: 3px;
-    border-style:solid;
-    border-color: #0f850d;
-}
-#content video{
-    border-width: 3px;
-    border-style:solid;
-    border-color: #0f850d;
-}
+
 
 #content .stdimg{
     width:800px;
