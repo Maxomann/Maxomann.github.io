@@ -151,9 +151,10 @@ article *{
 
 }
 
-#content .*{
-    padding-left:20%;
-    padding-right:20%;
+/* ---CONTENT_DESIGN_OPTIONS--- */
+#content .block{
+    margin-left:10%;
+    margin-right:10%;
 }
 
 
