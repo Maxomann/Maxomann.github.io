@@ -132,10 +132,6 @@ article {
     margin-bottom:85px;
 }
 
-/*article *{
-    box-shadow:none;
-}*/
-
 /* content */
 #content{
     text-align:center;
@@ -155,6 +151,20 @@ article {
 #content .block{
     margin-left:10%;
     margin-right:10%;
+}
+
+#content img{
+    border: 3px, solid, #0f850d;
+}
+#content video{
+    border: 3px, solid, #0f850d;
+}
+
+#content .stdimg{
+    width:800px;
+}
+#content .stdvideo{
+    width:800px;
 }
 
 

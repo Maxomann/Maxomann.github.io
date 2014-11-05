@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="assets/icon64.ico" />
 
 </head>
-<body onload="scaleHeaderToWindowSize()">
+<body>
     <header id="headerId">
         <a href="index.html"><img id="headerIcon" alt="logo" src="assets/icon512.png" /></a>
         <a href="index.html">
@@ -69,12 +69,6 @@
     }
 
     document.onclick = hideNavigation;
-    
-    function scaleHeaderToWindowSize(){
-        var size = window.innerHeight;
-        var element = document.getElementById('headerId');
-        //element.style.paddingBottom = size - element.getBoundingClientRect().height;
-    }
 
     </script>
 
