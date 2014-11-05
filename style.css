@@ -154,10 +154,14 @@ article {
 }
 
 #content img{
-    border: 3px, solid, #0f850d;
+    border-width: 3px;
+    border-style:solid;
+    border-color: #0f850d;
 }
 #content video{
-    border: 3px, solid, #0f850d;
+    border-width: 3px;
+    border-style:solid;
+    border-color: #0f850d;
 }
 
 #content .stdimg{
