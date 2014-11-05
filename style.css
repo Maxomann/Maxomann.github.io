@@ -13,7 +13,7 @@ body {
 
 /* Header */
 header{
-    padding-bottom:180px;
+    padding-bottom:175px;
     background-image: url(assets/backgroundHeader.jpg);
     background-position: bottom center;
     background-size:auto 900px;
@@ -148,13 +148,19 @@ article *{
     color: #1a1a1a;
     font-size: 25px;
     background-color:#F5F5F5;
+
 }
 
-/* ---CONTENT_DESIGN_OPTIONS--- */
-#content .block{
+#content *{
     margin-left:20%;
     margin-right:20%;
 }
+
+/* ---CONTENT_DESIGN_OPTIONS--- */
+/*#content .block{
+    margin-left:20%;
+    margin-right:20%;
+}*/
 
 
 #content h1{
