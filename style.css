@@ -1,6 +1,5 @@
 ﻿html {
     color: black;
-    background-color: #585858;
     background-color:#43aaa5;
 }
 
@@ -195,8 +194,12 @@ article {
 /* ---CONTENT_DESIGN_OPTIONS_END--- */
 
 footer {
+    width:100%;
+    margin-top:50px;
+    margin-bottom:50px;
     text-align: center;
     color: #585858;
+    background-color:#43aaa5;
 
     font-size: 18px;
 }
