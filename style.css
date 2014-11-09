@@ -13,6 +13,7 @@ body {
 header{
     padding-bottom:150px;
     background-image: url(assets/backgroundHeader.jpg);
+    background-color:paleturquoise;
     background-position: bottom center;
     background-size:auto 900px;
 }
