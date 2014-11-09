@@ -12,8 +12,8 @@ body {
 /* Header */
 header{
     padding-bottom:150px;
-    background-image: url(assets/backgroundHeader.jpg);
-    background-color:paleturquoise;
+    /*background-image: url(assets/backgroundHeader.jpg);*/
+    background-color:aquamarine;
     background-position: bottom center;
     background-size:auto 900px;
 }
