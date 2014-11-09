@@ -137,44 +137,44 @@ article {
 
 
 /* ---CONTENT_DESIGN_OPTIONS--- */
-#article .block{
+article .block{
     margin-left:10%;
     margin-right:10%;
     max-width:100%;
 }
 
-#article img{
+article img{
     border-width: 3px;
     border-style:solid;
     border-color: #0f850d;
     margin:20px;
 }
-#article video{
+article video{
     border-width: 3px;
     border-style:solid;
     border-color: #0f850d;
     margin:20px;
 }
 
-#article .noborder{
+article .noborder{
     border-width: 0;
 }
 
-#article .fill_parent{
+article .fill_parent{
     width:100%;
 }
 
-#article .half_left{
+article .half_left{
     width:50%;
     float:left;
 }
 
-#article .half_right{
+article .half_right{
     width:50%;
     float: right;
 }
 
-#article h1{
+article h1{
     margin-top:0;
     background-color:#0f850d;
     -webkit-box-shadow: 0 5px 11px -5px rgba(0,0,0,0.75);
