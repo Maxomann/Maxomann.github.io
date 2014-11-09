@@ -118,9 +118,9 @@ a:hover{
 
 /* article */
 article { 
-    -webkit-box-shadow: 0 -8px 300px 5px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0 -8px 300px 5px rgba(0,0,0,0.75);
-    box-shadow: 0 -8px 300px 5px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0 -8px 300px 50px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0 -8px 300px 50px rgba(0,0,0,0.75);
+    box-shadow: 0 -8px 300px 50px rgba(0,0,0,0.75);
 
     text-align:center;
     padding-bottom:30px;
@@ -137,44 +137,44 @@ article {
 
 
 /* ---CONTENT_DESIGN_OPTIONS--- */
-#content .block{
+#article .block{
     margin-left:10%;
     margin-right:10%;
     max-width:100%;
 }
 
-#content img{
+#article img{
     border-width: 3px;
     border-style:solid;
     border-color: #0f850d;
     margin:20px;
 }
-#content video{
+#article video{
     border-width: 3px;
     border-style:solid;
     border-color: #0f850d;
     margin:20px;
 }
 
-#content .noborder{
+#article .noborder{
     border-width: 0;
 }
 
-#content .fill_parent{
+#article .fill_parent{
     width:100%;
 }
 
-#content .half_left{
+#article .half_left{
     width:50%;
     float:left;
 }
 
-#content .half_right{
+#article .half_right{
     width:50%;
     float: right;
 }
 
-#content h1{
+#article h1{
     margin-top:0;
     background-color:#0f850d;
     -webkit-box-shadow: 0 5px 11px -5px rgba(0,0,0,0.75);
