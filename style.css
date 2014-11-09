@@ -170,13 +170,13 @@ article {
     border-width: 0;
 }
 
-#content .full{
+#content .fill_parent{
     width:100%;
 }
 
 #content .half_left{
     width:50%;
-    display:block;
+    float:left;
 }
 
 #content .half_right{
