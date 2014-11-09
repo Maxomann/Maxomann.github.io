@@ -118,9 +118,15 @@ a:hover{
 
 /* article */
 article { 
-    -webkit-box-shadow: 0 -8px 11px 5px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0 -8px 11px 5px rgba(0,0,0,0.75);
-    box-shadow: 0 -8px 11px 5px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0 -8px 300px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0 -8px 300px 5px rgba(0,0,0,0.75);
+    box-shadow: 0 -8px 300px 5px rgba(0,0,0,0.75);
+
+    text-align:center;
+    padding-bottom:30px;
+    color: #1a1a1a;
+    font-size: 25px;
+    background-color:#F5F5F5;
 }
 
 #button_down{
@@ -129,15 +135,6 @@ article {
     margin-bottom:85px;
 }
 
-/* content */
-#content{
-    text-align:center;
-    padding-bottom:30px;
-    color: #1a1a1a;
-    font-size: 25px;
-    background-color:#F5F5F5;
-
-}
 
 /* ---CONTENT_DESIGN_OPTIONS--- */
 #content .block{
