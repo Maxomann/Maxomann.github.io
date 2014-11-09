@@ -136,6 +136,12 @@ article {
 
 
 /* ---CONTENT_DESIGN_OPTIONS--- */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 article .block{
     margin-left:10%;
     margin-right:10%;
@@ -167,18 +173,10 @@ article .fill_parent{
 article .half_left{
     width:50%;
     float:left;
-
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
 }
 
 article .half_right{
     width:50%;
-
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
 }
 
 article h1{
