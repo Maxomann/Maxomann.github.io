@@ -11,7 +11,7 @@
 </head>
 <body>
     <!--Fixed Content-->
-    <nav id="nav" onclick="openNav=true">
+    <nav onclick="openNav=true">
         <img id="button_navigation" alt="button_navigation" src="assets/button_navigation.png" onclick="onNavigationClick()" />
         <a href="mailto:kay.gonschior@gmail.com"><img id="button_mail" alt="button_mail" src="assets/button_mail.png" /></a>
         <div id="innerNav">
@@ -26,7 +26,7 @@
 
 
 
-    <header id="headerId">
+    <header>
         <a href="index.html"><img id="headerIcon" alt="logo" src="assets/icon512.png" /></a>
         <a href="index.html">
 			<p id="headerKG">Kay Gonschior</p>
@@ -75,7 +75,7 @@
 
     document.onclick = hideNavigation;
 
-    document.getElementById('headerId').style.paddingBottom = 9000;
+    document.getElementsByTagName('header')[0].style.paddingBottom = window.innerHeight-676;
 
     </script>
 
