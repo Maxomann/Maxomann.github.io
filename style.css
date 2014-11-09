@@ -118,9 +118,9 @@ a:hover{
 
 /* article */
 article { 
-    -webkit-box-shadow: 0 -50px 300px 150px #0f850d;
-    -moz-box-shadow: 0 -50px 300px 150px #0f850d;
-    box-shadow: 0 -50px 300px 150px #0f850d;
+    -webkit-box-shadow: 0 -100px 200px 150px #0f850d;
+    -moz-box-shadow: 0 -100px 200px 150px #0f850d;
+    box-shadow: 0 -100px 200px 150px #0f850d;
 
     text-align:center;
     padding-bottom:30px;
