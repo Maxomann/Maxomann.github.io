@@ -166,20 +166,16 @@ article {
     margin:20px;
 }
 
-#content .stdimg{
-    width:800px;
-}
-#content .stdvideo{
-    width:800px;
+#content .noborder{
+    border-width: 0;
 }
 
-#content .stdimgnnobd{
-    width:800px;
-    border-width: 0;
+#content .full{
+    width:100%;
 }
-#content .stdvideonobd{
-    width:800px;
-    border-width: 0;
+
+#content .half{
+    width:50%;
 }
 
 #content h1{
