@@ -171,12 +171,13 @@ article {
 }
 
 #content .full{
+    display:block;
     width:100%;
 }
 
 #content .half_left{
     width:50%;
-    float:left;
+    display:block;
 }
 
 #content .half_right{
