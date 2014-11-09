@@ -1,9 +1,5 @@
 ﻿html {
     color: black;
-
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
 }
 
 body {
@@ -171,11 +167,18 @@ article .fill_parent{
 article .half_left{
     width:50%;
     float:left;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 article .half_right{
     width:50%;
-    float: right;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 article h1{
