@@ -1,5 +1,9 @@
 ﻿html {
     color: black;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
@@ -158,6 +162,7 @@ article video{
 article .noborder{
     border-width: 0;
 }
+
 
 article .fill_parent{
     width:100%;
