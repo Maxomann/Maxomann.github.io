@@ -11,7 +11,7 @@ body {
 
 /* Header */
 header{
-    padding-bottom:150px;
+    padding-bottom:235px;
     /*background-image: url(assets/backgroundHeader.jpg);*/
     background-color:aquamarine;
     background-position: bottom center;
@@ -123,7 +123,7 @@ article {
     box-shadow: 0 -60px 100px 50px #0f850d;
 
     text-align:center;
-    padding-bottom:115px;
+    padding-bottom:80px;
     color: #1a1a1a;
     font-size: 25px;
     background-color:#F5F5F5;
