@@ -170,12 +170,9 @@ article .fill_parent{
     width:100%;
 }
 
-article .half_left{
+article .half{
     width:50%;
-}
-
-article .half_right{
-    width:50%;
+    float:left;
 }
 
 article h1{
