@@ -177,7 +177,7 @@ article {
 }
 
 #content h1{
-    margin-bottom:30px;
+    margin-top:0;
     background-color:#0f850d;
     -webkit-box-shadow: 0 5px 11px -5px rgba(0,0,0,0.75);
     -moz-box-shadow: 0 5px 11px -5px rgba(0,0,0,0.75);
