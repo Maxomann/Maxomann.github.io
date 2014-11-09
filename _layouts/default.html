@@ -75,7 +75,11 @@
 
     document.onclick = hideNavigation;
 
-    document.getElementsByTagName('header')[0].style.paddingBottom = (window.innerHeight - document.getElementsByTagName('header')[0].getBoundingClientRect().height - document.getElementsByTagName('h1')[0].getBoundingClientRect().height).toString() + "px";
+    document.getElementsByTagName('header')[0].style.paddingBottom = (
+        window.innerHeight
+        - document.getElementsByTagName('header')[0].getBoundingClientRect().height
+        - document.getElementsByTagName('h1')[0].getBoundingClientRect().height
+        ).toString() + "px";
 
     </script>
 
