@@ -182,7 +182,7 @@ article {
 
 #content .half_right{
     width:50%;
-    float right;
+    float: right;
 }
 
 #content h1{
