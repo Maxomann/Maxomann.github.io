@@ -174,8 +174,14 @@ article {
     width:100%;
 }
 
-#content .half{
+#content .half_left{
     width:50%;
+    float:left;
+}
+
+#content .half_right{
+    width:50%;
+    float:right;
 }
 
 #content h1{
