@@ -12,8 +12,8 @@ body {
 /* Header */
 header{
     padding-bottom:0;
-    /*background-image: url(assets/backgroundHeader.jpg);*/
-    background-color:aquamarine;
+    background-image: url(assets/backgroundHeader.jpg);
+    /*background-color:aquamarine;*/
     background-position: bottom center;
     background-size:auto 900px;
 }
@@ -170,9 +170,14 @@ article .fill_parent{
     width:100%;
 }
 
-article .half{
+article .half_l{
     width:50%;
     float:left;
+}
+
+article .half_r{
+	width:50%;
+	float:right;
 }
 
 article h1{
