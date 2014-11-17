@@ -1,86 +1,133 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Kay Gonschior | {{page.title}}</title>
-    <meta charset="utf-8" />
 
-    <link rel="stylesheet" href="source-sans-pro.css" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="assets/icon64.ico" />
+<head>
+	<title>Kay Gonschior | {{page.title}}</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="source-sans-pro.css" />
+	<link rel="stylesheet" href="style.css" />
+	<link rel="shortcut icon" href="assets/icon64.ico" />
+
+	<link rel="stylesheet" href="grid/col.css" media="all">
+	<link rel="stylesheet" href="grid/2cols.css" media="all">
+	<link rel="stylesheet" href="grid/3cols.css" media="all">
+	<link rel="stylesheet" href="grid/4cols.css" media="all">
+	<link rel="stylesheet" href="grid/5cols.css" media="all">
+	<link rel="stylesheet" href="grid/6cols.css" media="all">
+	<link rel="stylesheet" href="grid/7cols.css" media="all">
+	<link rel="stylesheet" href="grid/8cols.css" media="all">
+	<link rel="stylesheet" href="grid/9cols.css" media="all">
+	<link rel="stylesheet" href="grid/10cols.css" media="all">
+	<link rel="stylesheet" href="grid/11cols.css" media="all">
+	<link rel="stylesheet" href="grid/12cols.css" media="all">
 
 </head>
+
 <body>
-    <!--Fixed Content-->
-    <nav onclick="openNav=true">
-        <img id="button_navigation" alt="button_navigation" src="assets/button_navigation.png" onclick="onNavigationClick()" />
-        <a href="mailto:kay.gonschior@gmail.com"><img id="button_mail" alt="button_mail" src="assets/button_mail.png" /></a>
-        <div id="innerNav">
-            <a href="index.html"><p>Home</p></a>
-            <a href="gallery.html#content"><p>Gallery</p></a>
-            <a href="blog.html#content"><p>Blog</p></a>
-            <a href="about.html#content"><p>About me</p></a>
-            <a href="contact.html#content"><p>Contact</p></a>
-        </div>
-    </nav>
-    <!--Fixed Content End-->
-
-
-
-    <header>
-        <a href="index.html"><img id="headerIcon" alt="logo" src="assets/icon512.png" /></a>
-        <a href="index.html">
-			<p id="headerKG">Kay Gonschior</p>
-			<p id="headerPro">- Web Design & Software Development -</p>
+	<!--Fixed Content-->
+	<nav onclick="openNav=true">
+		<img id="button_navigation" alt="button_navigation" src="assets/button_navigation.png" onclick="onNavigationClick()" />
+		<a href="mailto:kay.gonschior@gmail.com">
+			<img id="button_mail" alt="button_mail" src="assets/button_mail.png" />
 		</a>
+		<div id="innerNav">
+			<a href="index.html">
+				<p>Home</p>
+			</a>
+			<a href="gallery.html#content">
+				<p>Gallery</p>
+			</a>
+			<a href="blog.html#content">
+				<p>Blog</p>
+			</a>
+			<a href="about.html#content">
+				<p>About me</p>
+			</a>
+			<a href="contact.html#content">
+				<p>Contact</p>
+			</a>
+		</div>
+	</nav>
+	<!--Fixed Content End-->
 
-        <a class="smoothScroll" href="#article"><img id="button_down" alt="button_down" src="assets/button_down.png" /></a>
-    </header>
-    <article id="article">
 
-        {{ content }}
+	<header>
+		<a href="index.html">
+			<img id="headerIcon" alt="logo" src="assets/icon512.png" />
+		</a>
+		<p id="headerKG"><a href="index.html">Kay Gonschior</a></p>
+		<p id="headerPro"><a href="index.html">- Web Design & Software Development -</a></p>
 
-    </article>
-    <footer><p>&#169;2014 Kay Gonschior --- <a href="impressum.html#article">Impressum</a> --- <a class="smoothScroll" href="#content">&uarr;top</a></p></footer>
+		<a class="smoothScroll" href="#article">
+			<img id="button_down" alt="button_down" src="assets/button_down.png" />
+		</a>
+	</header>
+
+
+	<article id="article">
+		<h1 style="margin-top:0">{{page.heading}}</h1>
+		<div class="block">
+
+			{{ content }}
+
+		</div>
+	</article>
+	<footer>
+		<p>&#169;2014 Kay Gonschior --- <a href="impressum.html#article">Impressum</a> --- <a class="smoothScroll" href="#article">&uarr;top</a>
+		</p>
+	</footer>
 
 
 
+	<!-- include scripts -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="smoothscroll.js"></script>
 
-    <!-- include scripts -->
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="javascript/smoothscroll.js"></script>
-    <script>
-    var navShow = false;
-    var openNav = false;
+	<script>
+		var navShow = false;
+		var openNav = false;
 
-    function onNavigationClick() {
-        if (navShow) {
-            hideNavigation();
-        }
-        else {
-            openNav = true;
-            showNavigation();
-        }
-    }
-    function showNavigation() {
-        navShow = true;
-        document.getElementById('innerNav').style.visibility = "visible";
-    }
-    function hideNavigation() {
-        if (!openNav) {
-            navShow = false;
-            document.getElementById('innerNav').style.visibility = "hidden";
-        }
-        openNav = false;
-    }
+		function onNavigationClick() {
+			if (navShow) {
+				hideNavigation();
+			} else {
+				openNav = true;
+				showNavigation();
+			}
+		}
 
-    document.onclick = hideNavigation;
+		function showNavigation() {
+			navShow = true;
+			document.getElementById('innerNav').style.visibility = "visible";
+		}
 
-    document.getElementsByTagName('header')[0].style.paddingBottom = (
-        window.innerHeight
-        - document.getElementsByTagName('header')[0].getBoundingClientRect().height
-        - document.getElementsByTagName('h1')[0].getBoundingClientRect().height
-        ).toString() + "px";
+		function hideNavigation() {
+			if (!openNav) {
+				navShow = false;
+				document.getElementById('innerNav').style.visibility = "hidden";
+			}
+			openNav = false;
+		}
 
-    </script>
+		document.onclick = hideNavigation;
+
+		function resizeHeaderBackgroundImage() {
+
+			var h1Heigth = document.getElementsByTagName('h1')[0].getBoundingClientRect().height;
+
+			document.getElementsByTagName('header')[0].style.height = (window.innerHeight - h1Heigth).toString() + "px";
+			
+			document.getElementsByTagName('article')[0].style.marginTop = (window.innerHeight - h1Heigth).toString() + "px";
+		}
+		document.addEventListener("DOMContentLoaded", resizeHeaderBackgroundImage);
+		window.addEventListener("resize", resizeHeaderBackgroundImage);
+	</script>
 </body>
+
 </html>
