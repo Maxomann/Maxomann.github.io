@@ -5,6 +5,9 @@
 	<title>Kay Gonschior | {{page.title}}</title>
 	<meta charset="utf-8" />
 
+	<!-- load fonts -->
+	<script src="http://use.edgefonts.net/kaushan-script:n4:all;kotta-one:n4:all;muli:n3,i4,i3,n4:all;poiret-one:n4:all.js"></script>
+	
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="source-sans-pro.css" />
 	<link rel="stylesheet" href="style.css" />
@@ -23,6 +26,13 @@
 	<link rel="stylesheet" href="grid/11cols.css" media="all">
 	<link rel="stylesheet" href="grid/12cols.css" media="all">
 
+	<!-- Here because it uses jekyll -->
+	<style type="text/css">
+	article p a, footer p a{
+		color: {{page.color}};
+	}
+	</style>
+	
 </head>
 
 <body>
@@ -54,13 +64,15 @@
 
 
 	<header>
-		<a href="index.html">
+		<!--<a href="index.html">
 			<img id="headerIcon" alt="logo" src="assets/icon512.png" />
-		</a>
-		<p id="headerKG"><a href="index.html">Kay Gonschior</a>
-		</p>
-		<p id="headerPro"><a href="index.html">- Web Design & Software Development -</a>
-		</p>
+		</a>-->
+		<div id="headerText">
+			<p id="headerKG"><a href="index.html">Kay Gonschior</a>
+			</p>
+			<p id="headerPro"><a href="index.html">- Web Design & Software Development -</a>
+			</p>
+		</div>
 
 		<a class="smoothScroll" href="#article">
 			<img id="button_down" alt="button_down" src="assets/button_down.png" />
@@ -69,7 +81,7 @@
 
 
 	<article id="article">
-		<h1 style="margin-top:0">{{page.heading}}</h1>
+		<a class="smoothScroll" href="#article"><h1 style="margin-top:0; background-color:{{page.color}}">{{page.heading}}</h1></a>
 		<div class="block">
 
 			{{ content }}
@@ -118,6 +130,7 @@
 		function resizeHeaderBackgroundImage() {
 
 			var h1Heigth = document.getElementsByTagName('h1')[0].getBoundingClientRect().height;
+			h1Heigth=0;
 
 			document.getElementsByTagName('header')[0].style.height = (window.innerHeight - h1Heigth).toString() + "px";
 
