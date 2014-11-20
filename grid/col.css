@@ -1,3 +1,4 @@
+
 /*  SECTIONS  ============================================================================= */
 
 .section {
@@ -27,6 +28,12 @@
 	display: block;
 	float:left;
 	margin: 1% 0 1% 1.6%;
+}
+
+.col_nomargin {
+	display: block;
+	float:left;
+	margin: 0;
 }
 
 .col:first-child { margin-left: 0; } /* all browsers except IE6 and lower */

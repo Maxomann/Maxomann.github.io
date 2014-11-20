@@ -25,11 +25,13 @@
 	<link rel="stylesheet" href="grid/10cols.css" media="all">
 	<link rel="stylesheet" href="grid/11cols.css" media="all">
 	<link rel="stylesheet" href="grid/12cols.css" media="all">
+	<link rel="stylesheet" href="grid/5cols_nomargin.css" media="all">
 
 	<!-- Here because it uses jekyll -->
 	<style type="text/css">
 	article p a, footer p a{
-		color: {{page.color}};
+	background-blend-mode: multiply;
+	color: {{page.color}};
 	}
 	</style>
 	
@@ -37,36 +39,41 @@
 
 <body>
 	<!--Fixed Content-->
-	<nav onclick="openNav=true">
-		<img id="button_navigation" alt="button_navigation" src="assets/button_navigation.png" onclick="onNavigationClick()" />
-		<a href="mailto:kay.gonschior@gmail.com">
-			<img id="button_mail" alt="button_mail" src="assets/button_mail.png" />
-		</a>
-		<div id="innerNav">
-			<a href="index.html">
-				<p>Home</p>
-			</a>
-			<a href="gallery.html#article">
-				<p>Gallery</p>
-			</a>
-			<a href="blog.html#article">
-				<p>Blog</p>
-			</a>
-			<a href="about.html#article">
-				<p>About me</p>
-			</a>
-			<a href="contact.html#article">
-				<p>Contact</p>
-			</a>
+	<nav id="nav">
+		<div class="section group">
+			<div style="background-color:#FF7400" class="col_nomargin span_1_of_5_nomargin">
+				<a href="index.html#article">
+					<h1>Home</h1>
+				</a>
+			</div>
+			<div style="background-color:#FF0000" class="col_nomargin span_1_of_5_nomargin">
+				<a href="gallery.html#article">
+					<h1>Gallery</h1>
+				</a>
+			</div>
+			<div style="background-color:#00D0D0" class="col_nomargin span_1_of_5_nomargin">
+				<a href="blog.html#article">
+					<h1>Blog</h1>
+				</a>
+			</div>
+			<div style="background-color:#00E700" class="col_nomargin span_1_of_5_nomargin">
+				<a href="about.html#article">
+					<h1>About me</h1>
+				</a>
+			</div>
+			<div style="background-color:#009800" class="col_nomargin span_1_of_5_nomargin">
+				<a href="contact.html#article">
+					<h1>Contact</h1>
+				</a>
+			</div>
 		</div>
+		<a class="smoothScroll" href="#article"><h1 class="heading" name="heading" style="background-color:{{page.color}}">{{page.heading}}</h1></a>
 	</nav>
 	<!--Fixed Content End-->
 
 
+	
 	<header>
-		<!--<a href="index.html">
-			<img id="headerIcon" alt="logo" src="assets/icon512.png" />
-		</a>-->
 		<div id="headerText">
 			<p id="headerKG"><a href="index.html">Kay Gonschior</a>
 			</p>
@@ -79,10 +86,10 @@
 		</a>
 	</header>
 
-
-	<article id="article">
-		<a class="smoothScroll" href="#article"><h1 style="margin-top:0; background-color:{{page.color}}">{{page.heading}}</h1></a>
-		<div class="block">
+	<div id="article"></div>
+	<a class="smoothScroll" href="#article"><h1 class="heading" name="heading" style="background-color:{{page.color}}">{{page.heading}}</h1></a>
+	<article>
+		<div class="block" style="margin-top:0">
 
 			{{ content }}
 
@@ -100,43 +107,40 @@
 	<script type="text/javascript" src="smoothscroll.js"></script>
 
 	<script>
-		var navShow = false;
-		var openNav = false;
-
-		function onNavigationClick() {
-			if (navShow) {
-				hideNavigation();
-			} else {
-				openNav = true;
-				showNavigation();
+		function updateTitleVisibility(){
+			var titles = document.getElementsByName("heading");
+			if(titles[0].getBoundingClientRect().top<titles[1].getBoundingClientRect().top)
+			{
+				titles[0].style.visibility="hidden";
+				titles[1].style.visibility="visible";
+			}
+			else
+			{
+				titles[0].style.visibility="visible";
+				titles[1].style.visibility="hidden";
 			}
 		}
-
-		function showNavigation() {
-			navShow = true;
-			document.getElementById('innerNav').style.visibility = "visible";
-		}
-
-		function hideNavigation() {
-			if (!openNav) {
-				navShow = false;
-				document.getElementById('innerNav').style.visibility = "hidden";
-			}
-			openNav = false;
-		}
-
-		document.onclick = hideNavigation;
-
 		function resizeHeaderBackgroundImage() {
+			document.getElementsByTagName('header')[0].style.height = (window.innerHeight).toString() + "px";
 
-			var h1Heigth = document.getElementsByTagName('h1')[0].getBoundingClientRect().height;
-			h1Heigth=0;
-
-			document.getElementsByTagName('header')[0].style.height = (window.innerHeight - h1Heigth).toString() + "px";
-
-			document.getElementsByTagName('article')[0].style.marginTop = (window.innerHeight - h1Heigth).toString() + "px";
+			document.getElementById('article').style.marginTop = (window.innerHeight).toString() + "px";
 		}
-		document.addEventListener("DOMContentLoaded", resizeHeaderBackgroundImage);
+		function onLoaded(){
+			resizeHeaderBackgroundImage();
+			updateTitleVisibility();
+			/*document.getElementById("article").style.height = document.getElementsByTagName("nav")[0].getBoundingClientRect().bottom.toString()+"px";*/
+		}
+		function onScrollEvent(){
+			/*var el = document.getElementById("heading_container");
+			if(el.getBoundingClientRect().top<68)
+			{
+				el.style.position="fixed";
+				el.top="68px";
+			}*/
+			updateTitleVisibility();
+		}
+		window.onscroll = onScrollEvent;
+		document.addEventListener("DOMContentLoaded", onLoaded);
 		window.addEventListener("resize", resizeHeaderBackgroundImage);
 	</script>
 </body>
