@@ -25,12 +25,12 @@ header{
 	position:fixed;
 	width:100%;
 	height: 100%;
-    background-image: url(assets/green_cup.png);
+    background-image: url(assets/references/AntikesGriechischesDingBesser.png);
     /*background-color:aquamarine;*/
     background-position: bottom center;
 	z-index: -10;
 	
-	font-family: poiret-one, kaushan-script;
+	font-family: pt-sans-narrow, poiret-one, kaushan-script;
 	font-weight: bold;
 	color:white;
 }
@@ -48,7 +48,11 @@ header{
 	top:50%;
 	left:50%;
 	transform: translateX(-50%) translateY(-50%);
-	text-shadow: 6px 6px 0px rgba(150, 150, 150, 1);
+    color:white;
+    /*text-shadow: -2px 0 #1D1D1D, 0 2px #1D1D1D, 2px 0 #1D1D1D, 0 -2px #1D1D1D;
+    -moz-text-shadow: -2px 0 #1D1D1D, 0 2px #1D1D1D, 2px 0 #1D1D1D, 0 -2px #1D1D1D;
+    -webkit-text-shadow: -2px 0 #1D1D1D, 0 2px #1D1D1D, 2px 0 #1D1D1D, 0 -2px #1D1D1D;*/
+	/*text-shadow: 6px 6px 0px rgba(150, 150, 150, 1);*/
 }
 
 #headerKG {
@@ -66,9 +70,9 @@ header{
 
 #button_down{
 	position: fixed;
-	left:50%;
 	transform: translateX(-50%);
-	bottom: 20px;
+	bottom: 60px;
+    
 }
 
 header a{
@@ -95,7 +99,7 @@ nav {
 
 nav div div{
 	background-image: url(assets/green_cup.png);
-	background-color: #43aaa5;
+	background-color: #414141;
 	background-blend-mode: multiply;
 }
 
@@ -129,8 +133,8 @@ article {
 
     text-align:center;
     padding-bottom:80px;
-    font-size: 25px;
-	background-image: url(assets/crossword.png);
+    font-size: 20px;
+	background-color:rgba(255,255,255,0.9);
 	padding-top: 20px;
 	margin-top: 0;
 	color: #1a1a1a;
@@ -146,20 +150,16 @@ article {
 	padding-bottom: 0;
 }
 
-#button_down{
-    width:120px;
-    margin-top:20px;
-}
+
 
 
 .heading{
 	background-image: url(assets/green_cup.png);
-	background-color: #43aaa5;
+	background-color: #414141;
 	background-blend-mode: multiply;
-	border-bottom:1px solid #585858;
-	padding-bottom: 0;
+	/*border-bottom:1px solid #585858;*/
 	margin:0;
-	font-size: 40px;
+    font-size: 1.5em;
 }
 
 article h1:not(.heading){
@@ -185,8 +185,8 @@ article .fill_parent{
 }
 
 .block{
-	padding-left:8%;
-    padding-right:8%;
+	margin-left:8%;
+    margin-right:8%;
     max-width:100%;
 }
 
@@ -204,14 +204,15 @@ article .fill_parent{
 
 footer {
     width:100%;
-    padding-top:50px;
-    padding-bottom:50px;
+    padding-top:5px;
+    padding-bottom:5px;
     text-align: center;
     color: #585858;
-    background-color:#43aaa5;
+    background-color:#414141;
 	
-	background-image: url(assets/footer_lodyas.png);
-
+	background-image: url(assets/green_cup.png);
+    background-blend-mode: multiply;
+    
     font-size: 18px;
 }
 
@@ -222,3 +223,10 @@ footer {
 
 
 
+
+#nav_name {
+    color:white;
+    text-align: left;
+    margin-left: 40px;
+    /*font-size: 30px;*/
+}
