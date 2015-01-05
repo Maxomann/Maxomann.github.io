@@ -62,7 +62,6 @@ nav {
 }
 
 #nav div {
-    height:68px;
 }
 
 nav div div, footer{
@@ -71,11 +70,13 @@ nav div div, footer{
 	background-blend-mode: multiply;
 }
 
-#nav_home {
-    margin-left: 40px;
+#nav_home { 
     color:white;
     text-align: left;
     transition: color 0.3s;
+    
+    margin-left: 15px;
+    width: 100%;
 }
 
 #nav_software {
@@ -236,4 +237,21 @@ footer {
     color: #585858;
     
     font-size: 18px;
+}
+
+
+#nav_me {
+    display:flex;
+}
+
+#nav_logo {
+    width: 48px;
+    height: 48px;
+}
+
+#test {
+    display: block;
+    
+    margin-top: 10px;
+    margin-left: 40px;
 }
