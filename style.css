@@ -17,6 +17,12 @@ body *{
 h1{
 	font-family: poiret-one, kotta-one;
 }
+h2{
+	font-family: poiret-one, kotta-one;
+}
+h3{
+	font-family: poiret-one, kotta-one;
+}
 
 /* Header */
 header{
@@ -33,39 +39,6 @@ header{
 	font-family: pt-sans-narrow, poiret-one, kaushan-script;
 	font-weight: bold;
 	color:white;
-}
-
-/*#headerIcon {
-    position:relative;
-    width: 180px;
-    height: 180px;
-    margin-top:100px;
-    z-index:5;
-}*/
-
-#headerText{
-	position: fixed;
-	top:50%;
-	left:50%;
-	transform: translateX(-50%) translateY(-50%);
-    color:white;
-    /*text-shadow: -2px 0 #1D1D1D, 0 2px #1D1D1D, 2px 0 #1D1D1D, 0 -2px #1D1D1D;
-    -moz-text-shadow: -2px 0 #1D1D1D, 0 2px #1D1D1D, 2px 0 #1D1D1D, 0 -2px #1D1D1D;
-    -webkit-text-shadow: -2px 0 #1D1D1D, 0 2px #1D1D1D, 2px 0 #1D1D1D, 0 -2px #1D1D1D;*/
-	/*text-shadow: 6px 6px 0px rgba(150, 150, 150, 1);*/
-}
-
-#headerKG {
-    position:relative;
-    font-size: 78.35px;
-    z-index:5;
-    margin:auto;
-}
-
-#headerPro {
-    position:relative;
-    font-size: 39.5px;
-    margin:auto;
 }
 
 #button_down{
@@ -104,7 +77,6 @@ nav div div{
 }
 
 /* Article */
-
 a{
 	color:inherit;
 	text-decoration: none;
@@ -150,20 +122,14 @@ article {
 	padding-bottom: 0;
 }
 
-
-
-
-.heading{
-	background-image: url(assets/green_cup.png);
-	background-color: #414141;
-	background-blend-mode: multiply;
-	/*border-bottom:1px solid #585858;*/
-	margin:0;
-    font-size: 1.5em;
-}
-
-article h1:not(.heading){
+article h1{
 	border-bottom:1px solid #585858;
+	font-style: italic;
+}
+article h2{
+	font-style: italic;
+}
+article h3{
 	font-style: italic;
 }
 
@@ -215,14 +181,6 @@ footer {
     
     font-size: 18px;
 }
-
-
-
-
-
-
-
-
 
 #nav_name {
     color:white;

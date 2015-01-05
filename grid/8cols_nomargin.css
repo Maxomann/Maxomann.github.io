@@ -36,7 +36,7 @@
 
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 835px) {
 	.span_8_of_8_nomargin {
 		width: 100%; 
 	}

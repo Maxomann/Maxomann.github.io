@@ -42,14 +42,14 @@
 	<!--Fixed Content-->
 	<nav id="nav">
 		<div class="section group">
-            <div style="color:#414141; height:68px;" class="col_nomargin span_3_of_8_nomargin">
+            <div style="height:68px;" class="col_nomargin span_3_of_8_nomargin">
                 <a href="index.html">
 				    <h1 id="nav_name">Kay Gonschior</h1>
                 </a>
 			</div>
 			<div style="color:#FF7400" class="col_nomargin span_1_of_8_nomargin">
-				<a href="index.html#article">
-					<h1>Home</h1>
+				<a href="software.html#article">
+					<h1>Software</h1>
 				</a>
 			</div>
 			<div style="color:#FF0000" class="col_nomargin span_1_of_8_nomargin">
@@ -73,30 +73,22 @@
 				</a>
 			</div>
 		</div>
-		<!-- <a class="smoothScroll" href="#article"><h1 class="heading" name="heading" style="color:{{page.color}}">{{page.heading}}</h1></a> -->
 	</nav>
 	<!--Fixed Content End-->
 
-
 	
 	<header>
-		<!-- <div id="headerText">
-			<p id="headerKG"><a href="index.html">Kay Gonschior</a>
-			</p>
-			<p id="headerPro"><a href="index.html">- Software Development -</a>
-			</p>
-		</div> -->
-
 		<a class="smoothScroll" href="#article">
 			<img id="button_down" alt="button_down" src="assets/arrow_down.svg" />
 		</a>
 	</header>
 
 	<div id="article"></div>
-	<!--<a class="smoothScroll" href="#article"><h1 class="heading" name="heading" style="color:{{page.color}}">{{page.heading}}</h1></a> -->
+    
 	<article>
 		<div class="block" style="margin-top:0">
-
+            <h1 style="color:{{page.color}}">{{page.heading}}</h1>
+            
 			{{ content }}
 
 		</div>
@@ -114,19 +106,6 @@
 	<script type="text/javascript" src="smoothscroll.js"></script>
 
 	<script>
-		function updateTitleVisibility(){
-			var titles = document.getElementsByName("heading");
-			if(titles[0].getBoundingClientRect().top<titles[1].getBoundingClientRect().top)
-			{
-				titles[0].style.visibility="hidden";
-				titles[1].style.visibility="visible";
-			}
-			else
-			{
-				titles[0].style.visibility="visible";
-				titles[1].style.visibility="hidden";
-			}
-		}
 		function resizeHeaderBackgroundImage() {
 			document.getElementsByTagName('header')[0].style.height = (window.innerHeight).toString() + "px";
 
@@ -134,19 +113,8 @@
 		}
 		function onLoaded(){
 			resizeHeaderBackgroundImage();
-			updateTitleVisibility();
 			/*document.getElementById("article").style.height = document.getElementsByTagName("nav")[0].getBoundingClientRect().bottom.toString()+"px";*/
 		}
-		function onScrollEvent(){
-			/*var el = document.getElementById("heading_container");
-			if(el.getBoundingClientRect().top<68)
-			{
-				el.style.position="fixed";
-				el.top="68px";
-			}*/
-			updateTitleVisibility();
-		}
-		/*window.onscroll = onScrollEvent;*/
 		document.addEventListener("DOMContentLoaded", onLoaded);
 		window.addEventListener("resize", resizeHeaderBackgroundImage);
 	</script>
