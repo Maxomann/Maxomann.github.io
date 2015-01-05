@@ -88,32 +88,32 @@ nav div div{
     margin-left: 40px;
     color:white;
     text-align: left;
-    transition: color 0.5s;
+    transition: color 0.3s;
 }
 
 #nav_software {
     color:#FF7400;
-    transition: transform 0.5s;
+    transition: transform 0.3s;
 }
 
 #nav_gallery {
     color:#FF0000;
-    transition: transform 0.5s;
+    transition: transform 0.3s;
 }
 
 #nav_blog {
     color:#00D0D0;
-    transition: transform 0.5s;
+    transition: transform 0.3s;
 }
 
 #nav_about {
     color:#00E700;
-    transition: transform 0.5s;
+    transition: transform 0.3s;
 }
 
 #nav_contact {
     color:#009800;
-    transition: transform 0.5s;
+    transition: transform 0.3s;
 }
 
 /*****/
@@ -152,7 +152,7 @@ nav div div{
 a{
 	color:inherit;
 	text-decoration: none;
-    transition: color 0.5s;
+    transition: color 0.3s;
 }
 
 article p a, footer p a{
