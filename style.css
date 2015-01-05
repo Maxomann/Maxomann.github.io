@@ -16,6 +16,7 @@ body *{
 
 h1{
 	font-family: poiret-one, kotta-one;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
 }
 h2{
 	font-family: poiret-one, kotta-one;
@@ -42,10 +43,13 @@ header{
 }
 
 #button_down{
-	position: fixed;
+	position: absolute;
 	transform: translateX(-50%);
 	bottom: 60px;
-    
+    transition: bottom 1s;
+}
+#button_down:hover{
+    bottom:70px;
 }
 
 header a{
@@ -66,9 +70,13 @@ nav {
     z-index:1;
 	width: 100%;
 	background-color: transparent;
+    
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
 }
 
-
+#nav div {
+    height:68px;
+}
 
 nav div div{
 	background-image: url(assets/green_cup.png);
@@ -76,10 +84,75 @@ nav div div{
 	background-blend-mode: multiply;
 }
 
+#nav_home {
+    margin-left: 40px;
+    color:white;
+    text-align: left;
+    transition: color 0.5s;
+}
+
+#nav_software {
+    color:#FF7400;
+    transition: transform 0.5s;
+}
+
+#nav_gallery {
+    color:#FF0000;
+    transition: transform 0.5s;
+}
+
+#nav_blog {
+    color:#00D0D0;
+    transition: transform 0.5s;
+}
+
+#nav_about {
+    color:#00E700;
+    transition: transform 0.5s;
+}
+
+#nav_contact {
+    color:#009800;
+    transition: transform 0.5s;
+}
+
+/*****/
+
+#nav_home:hover {
+    color:#9f9f9f;
+}
+
+#nav_software:hover {
+    color:#FF7400;
+    transform:translateY(-6px);
+}
+
+#nav_gallery:hover {
+    color:#FF0000;
+    transform:translateY(-6px);
+}
+
+#nav_blog:hover {
+    color:#00D0D0;
+    transform:translateY(-6px);
+}
+
+#nav_about:hover {
+    color:#00E700;
+    transform:translateY(-6px);
+}
+
+#nav_contact:hover {
+    color:#009800;
+    transform:translateY(-6px);
+}
+
+
 /* Article */
 a{
 	color:inherit;
 	text-decoration: none;
+    transition: color 0.5s;
 }
 
 article p a, footer p a{
@@ -180,11 +253,4 @@ footer {
     background-blend-mode: multiply;
     
     font-size: 18px;
-}
-
-#nav_name {
-    color:white;
-    text-align: left;
-    margin-left: 40px;
-    /*font-size: 30px;*/
 }
