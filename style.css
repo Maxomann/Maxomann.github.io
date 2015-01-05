@@ -6,22 +6,13 @@ body {
 	margin:0;
     padding:0;
 	text-align: center;
-    font-family: muli;
-	pointer-events: none;
-}
-
-body *{
-	pointer-events: all;
+    font-family: lato, muli;
 }
 
 h1{
-	font-family: poiret-one, kotta-one;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
 }
-h2{
-	font-family: poiret-one, kotta-one;
-}
-h3{
+h1, h2, h3{
 	font-family: poiret-one, kotta-one;
 }
 
@@ -36,10 +27,6 @@ header{
     /*background-color:aquamarine;*/
     background-position: bottom center;
 	z-index: -10;
-	
-	font-family: pt-sans-narrow, poiret-one, kaushan-script;
-	font-weight: bold;
-	color:white;
 }
 
 #button_down{
@@ -78,7 +65,7 @@ nav {
     height:68px;
 }
 
-nav div div{
+nav div div, footer{
 	background-image: url(assets/green_cup.png);
 	background-color: #414141;
 	background-blend-mode: multiply;
@@ -247,10 +234,6 @@ footer {
     padding-bottom:5px;
     text-align: center;
     color: #585858;
-    background-color:#414141;
-	
-	background-image: url(assets/green_cup.png);
-    background-blend-mode: multiply;
     
     font-size: 18px;
 }
