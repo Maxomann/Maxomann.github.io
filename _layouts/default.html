@@ -9,8 +9,9 @@
 	<script src="http://use.edgefonts.net/droid-sans:n4,n7:all;kotta-one:n4:all;lato:n9,i4,n1,i7,i9,n7,i1,i3,n4,n3:all;muli:n3,i4,i3,n4:all;poiret-one:n4:all.js"></script>
 	
 	<!-- Stylesheets -->
-	<link rel="stylesheet" href="source-sans-pro.css" />
-	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="flexslider.css" />
+    <link rel="stylesheet" href="style.css" />
+
 	<link rel="shortcut icon" href="assets/icon64.ico" />
 
 	<link rel="stylesheet" href="grid/col.css" media="all">
@@ -30,7 +31,7 @@
 
 	<!-- Here because it uses jekyll -->
 	<style type="text/css">
-	article p a, footer p a{
+	article a, footer a{
 	background-blend-mode: multiply;
 	color: {{page.color}};
 	}
@@ -44,35 +45,35 @@
 		<div class="section group">
             <div class="col_nomargin span_3_of_8_nomargin">
                 <div id="nav_me">
-                    <div id="test">
+                    <div id="nav_me_logo_positioner">
                         <img id="nav_logo" src="assets/icon64.ico"/>
                     </div>
-                    <a id="nav_home" href="index.html"><h1>Kay Gonschior</h1></a>
+                    <a id="nav_home" href="index.html#article"><h1>Kay Gonschior</h1></a>
                 </div>
 			</div>
 			<div class="col_nomargin span_1_of_8_nomargin">
 				<a href="software.html#article">
-					<h1 id="nav_software">Software</h1>
+					<h1 class="nav_transition color_software">Software</h1>
 				</a>
 			</div>
 			<div class="col_nomargin span_1_of_8_nomargin">
 				<a href="gallery.html#article">
-					<h1 id="nav_gallery">Gallery</h1>
+					<h1 class="nav_transition color_gallery">Gallery</h1>
 				</a>
 			</div>
 			<div class="col_nomargin span_1_of_8_nomargin">
 				<a href="blog.html#article">
-					<h1 id="nav_blog">Blog</h1>
+					<h1 class="nav_transition color_blog">Blog</h1>
 				</a>
 			</div>
 			<div class="col_nomargin span_1_of_8_nomargin">
 				<a href="about.html#article">
-					<h1 id="nav_about">About me</h1>
+					<h1 class="nav_transition color_about">About me</h1>
 				</a>
 			</div>
 			<div class="col_nomargin span_1_of_8_nomargin">
 				<a href="contact.html#article">
-					<h1 id="nav_contact">Contact</h1>
+					<h1 class="nav_transition color_contact">Contact</h1>
 				</a>
 			</div>
 		</div>
@@ -89,16 +90,18 @@
 	<div id="article"></div>
     
 	<article>
+        <center>
 		<div class="block" style="margin-top:0">
             <h1 style="color:{{page.color}}"><a class="smoothScroll" href="#article">{{page.heading}}</a></h1>
             
 			{{ content }}
 
 		</div>
+            </center>
 	</article>
     
 	<footer>
-		<p>&#169;2014 Kay Gonschior --- <a href="impressum.html#article">Impressum</a> --- <a class="smoothScroll" href="#article">&uarr;top</a>
+		<p>&#169;2015 Kay Gonschior --- <a href="impressum.html#article">Impressum</a> --- <a href="http://github.com/Maxomann/Maxomann.github.io" target="_blank">Source code</a> --- <a class="smoothScroll" href="#article">&uarr;top</a>
 		</p>
 	</footer>
 
@@ -107,19 +110,27 @@
 	<!-- include scripts -->
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="smoothscroll.js"></script>
+    <script type="text/javascript" src="jquery.flexslider-min.js"></script>
 
 	<script>
-		function resizeHeaderBackgroundImage() {
-			document.getElementsByTagName('header')[0].style.height = (window.innerHeight).toString() + "px";
+    $(document).ready(function() {
+    $('.flexslider').flexslider({
+        animation: "slide",
+        controlNav: "thumbnails"
+        });
+    });
+        
+    function resizeHeaderBackgroundImage() {
+        document.getElementsByTagName('header')[0].style.height = (window.innerHeight).toString() + "px";
 
-			document.getElementById('article').style.marginTop = (window.innerHeight).toString() + "px";
-		}
-		function onLoaded(){
-			resizeHeaderBackgroundImage();
-			/*document.getElementById("article").style.height = document.getElementsByTagName("nav")[0].getBoundingClientRect().bottom.toString()+"px";*/
-		}
-		document.addEventListener("DOMContentLoaded", onLoaded);
-		window.addEventListener("resize", resizeHeaderBackgroundImage);
+        document.getElementById('article').style.marginTop = (window.innerHeight).toString() + "px";
+    }
+    function onLoaded(){
+        resizeHeaderBackgroundImage();
+        /*document.getElementById("article").style.height = document.getElementsByTagName("nav")[0].getBoundingClientRect().bottom.toString()+"px";*/
+    }
+    document.addEventListener("DOMContentLoaded", onLoaded);
+    window.addEventListener("resize", resizeHeaderBackgroundImage);
 	</script>
 </body>
 
