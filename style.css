@@ -67,28 +67,22 @@ nav div div, footer{
 	background-blend-mode: multiply;
 }
 
-#nav_home { 
+#nav_home {
     color:white;
-    text-align: left;
     transition: color 0.3s;
-    
-    margin-left: 15px;
-    width: 100%;
+
+    margin:0;
 }
 
-#nav_me {
-    display:flex;
-}
-
-#nav_me_logo_positioner {
-    display: block;
-    
-    margin-top: 10px;
-    margin-left: 40px;
+nav div div{
+    height: 68px;
 }
 
 #nav_logo {
-    width: 48px;
+    /*width: 84px;*/
+    float:left;
+    margin-top: 10px;
+    margin-left: 20px;
     height: 48px;
 }
 
@@ -234,6 +228,10 @@ article video{
     transform: scale(0.9);
 }
 
+.smallimg{
+    width:200px;
+}
+
 .stdimg{
     width:800px;
 }
@@ -277,4 +275,12 @@ footer {
 .flexslider{
     background-color: #414141;
     border: 4px solid #414141;
+}
+
+#nav_name {
+    margin:0;
+    padding-top:22px;
+    height:48px;
+    
+    transform: translateX(5px);
 }
