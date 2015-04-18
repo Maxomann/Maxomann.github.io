@@ -91,6 +91,12 @@ nav div div{
     height: 48px;
 }
 
+@media only screen and (max-width: 480px){
+    #nav_logo {
+        margin-left: 5px;
+    }
+}
+
 #nav_name {
     margin:0;
     padding-top:22px;
@@ -105,6 +111,12 @@ nav div div{
     height: 48px;
     margin-right:20px;
     padding-top: 10px;
+}
+
+@media only screen and (max-width: 480px){
+    #nav_planelButtonContainer {
+        margin-right: 5px;
+    }
 }
 
 #nav_panelButton {

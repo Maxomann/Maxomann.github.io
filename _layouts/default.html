@@ -122,21 +122,44 @@
     var mobileControl=false;
         
     function showPanel(){
-        var panel_childs = document.getElementById('nav').children[0].children;
+        var child_zero = document.getElementById('nav').children[0];
+        var panel_childs = child_zero.children;
+        
         panel_childs[1].style.visibility = 'visible';
+        panel_childs[1].style.pointerEvents = 'inherit';
+        
         panel_childs[2].style.visibility = 'visible';
+        panel_childs[2].style.pointerEvents = 'inherit';
+        
         panel_childs[3].style.visibility = 'visible';
+        panel_childs[3].style.pointerEvents = 'inherit';
+        
         panel_childs[4].style.visibility = 'visible';
+        panel_childs[4].style.pointerEvents = 'inherit';
+        
         panel_childs[5].style.visibility = 'visible';
+        panel_childs[5].style.pointerEvents = 'inherit';
+        
         panelActive=true;
     }
     function hidePanel(){
-        var panel_childs = document.getElementById('nav').children[0].children;
+        var child_zero = document.getElementById('nav').children[0];
+        var panel_childs = child_zero.children;
+        
         panel_childs[1].style.visibility = 'hidden';
+        panel_childs[1].style.pointerEvents = 'none';
+        
         panel_childs[2].style.visibility = 'hidden';
+        panel_childs[2].style.pointerEvents = 'none';
+        
         panel_childs[3].style.visibility = 'hidden';
+        panel_childs[3].style.pointerEvents = 'none';
+        
         panel_childs[4].style.visibility = 'hidden';
+        panel_childs[4].style.pointerEvents = 'none';
+        
         panel_childs[5].style.visibility = 'hidden';
+        panel_childs[5].style.pointerEvents = 'none';
         panelActive=false;
     }
     function changePanel(){
@@ -181,6 +204,10 @@
         
         resizeHeaderBackgroundImage();
         checkMobileControl();
+        
+        var nav = document.getElementById('nav');
+        nav.style.height = "68px";
+        nav.children[0].style.height = "68px";
     });
     
     function onResize(){
