@@ -67,12 +67,16 @@ nav div div, footer{
 	background-blend-mode: multiply;
 }
 
-#nav_home {
+#nav_nameContainer {
     color:white;
     transition: color 0.3s;
     float:left;
 
     margin:0;
+}
+
+#nav_nameContainer:hover {
+    color:#9f9f9f;
 }
 
 nav div div{
@@ -157,10 +161,6 @@ nav div div{
 }
 
 /*****/
-
-#nav_home:hover {
-    color:#9f9f9f;
-}
 
 
 /* Article */
