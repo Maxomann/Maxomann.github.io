@@ -62,7 +62,7 @@ function disableMobileControl(){
     mobileControl=false;
 }
 function checkMobileControl(){
-    if(window.innerWidth<835){
+    if(window.innerWidth<=835){
         if(!mobileControl){
             enableMobileControl();
         }
