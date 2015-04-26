@@ -12,8 +12,7 @@ robot_tags: noindex
     <ul>
       {% for post in site.posts %}
         <li>
-            {% capture hrefstr %}{{ post.url }}#article{% endcapture %}
-            <p>{{post.date | date: "%-d %B %Y" }} - <a href="{{ hrefstr }}">{{ post.title }}</a></p>
+            <p>{{post.date | date: "%-d %B %Y" }} - <a href="{{ post.url | remove:'.html' | append:'#article' }}">{{ post.title }}</a></p>
         </li>
       {% endfor %}
     </ul>
