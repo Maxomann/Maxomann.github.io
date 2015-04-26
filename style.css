@@ -7,6 +7,10 @@ body {
     padding:0;
 	text-align: center;
     font-family: lato, muli;
+    pointer-events: none;
+}
+body *{
+    pointer-events: all;
 }
 
 h1{
@@ -211,8 +215,6 @@ article {
 
 #article{
 	height:68px;
-	background-color:green;
-	visibility: hidden;
 	pointer-events: none;
 	margin-bottom: 0;
 	margin-top: 0;
