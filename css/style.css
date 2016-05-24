@@ -136,14 +136,15 @@ nav div div{
     transform:translateY(-6px);
 }
 
-#blog_small_index{
+.blog_index{
     border-radius: 5px 5px 5px 5px;
     -moz-border-radius: 5px 5px 5px 5px;
     -webkit-border-radius: 5px 5px 5px 5px;
     border: 1px solid #585858;
+    max-width: 600px;
 }
 
-#blog_small_index ul{
+.blog_index ul{
     text-align: left;
 }
 
@@ -220,7 +221,7 @@ article {
     align-items: center;
     padding-bottom:80px;
     font-size: 20px;
-	background-color:rgba(255,255,255,0.9);
+	background-color:rgba(255,255,255,0.97);
 	padding-top: 20px;
 	margin-top: 0;
 	color: #1a1a1a;
