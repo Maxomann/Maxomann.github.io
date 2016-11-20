@@ -53,10 +53,12 @@ function initContactInfo(){
     // Mail hrefs
     $(".addMailtoHref").attr("href", "mailto:info@kay-gonschior.de");
 
-    $(".contact_general").html("<h3>Kay Gonschior</h3><p>info@kay-gonschior.de<br>0176 / 48391997<br>Xing</p>");
+    $(".contact_general").html("<h3>Kay Gonschior</h3>\
+    <p><a href='mailto:info@kay-gonschior.de'>info@kay-gonschior.de</a><br>\
+    <a href='tel:+4917648391997'>+49176 / 48391997</a></p>");
 
-    $(".contact_imp_de").html("<br>Gonschior, Kay Leon<br>Scheideweg, 26<br>20253 Hamburg<br><h2>Kontakt</h2>Telefon: 0176 / 48391997<br>E-Mail: <a href='mailto:info@kay-gonschior.de'>info@kay-gonschior.de</a><br>");
-    $(".contact_imp_en").html("<br>Gonschior, Kay Leon<br>Scheideweg, 26<br>20253 Hamburg<br><h2>Contact</h2>Telephone: 0176 / 48391997<br>E-Mail: <a href='mailto:info@kay-gonschior.de'>info@kay-gonschior.de</a><br>");
+    $(".contact_imp_de").html("<br>Gonschior, Kay Leon<br>Scheideweg, 26<br>20253 Hamburg<br><h2>Kontakt</h2>Telefon: +49176 / 48391997<br>E-Mail: <a href='mailto:info@kay-gonschior.de'>info@kay-gonschior.de</a><br>");
+    $(".contact_imp_en").html("<br>Gonschior, Kay Leon<br>Scheideweg, 26<br>20253 Hamburg<br><h2>Contact</h2>Telephone: +49176 / 48391997<br>E-Mail: <a href='mailto:info@kay-gonschior.de'>info@kay-gonschior.de</a><br>");
 
     $(".priv_mail").html("<a href='mailto:info@kay-gonschior.de'>info@kay-gonschior.de</a> )<br>");
 }

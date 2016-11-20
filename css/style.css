@@ -75,7 +75,7 @@ a{
     }
 }
 .slider_heading{
-    height: 200px;
+    min-height: 200px;
     background-color: #0a1a2b;
     width: 100%;
     color: white;
@@ -113,6 +113,12 @@ a{
     margin-bottom: 40px;
 }
 
+.link_collection>p{
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 footer{
     height: 200px;
     background-color: #0a1a2b;
@@ -139,6 +145,10 @@ footer div{
 .bigquote>p:nth-child(2){
     font-size: 28px;
     transform: translateX(25%);
+}
+.bigquote>p:nth-child(3){
+    font-size: 20px;
+    transform: translateX(34%);
 }
 @media (max-width:750px) {
     .bigquote{
