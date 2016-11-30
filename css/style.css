@@ -54,6 +54,10 @@ a{
   height: auto;
 }
 
+#portraitimage {
+    max-height: 220px;
+}
+
 #cover{
     background-color: white;
 
