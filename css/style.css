@@ -6,8 +6,13 @@ body{
     font-size: 1.6em;
 }
 
-p{
-    text-rendering: optimizeLegibility;
+h1, h2, h3 {
+    font-weight: bold;
+}
+
+p {
+    font-family: 'Zilla Slab', serif;
+    font-size: 1.05em;
 }
 
 a{
@@ -86,11 +91,15 @@ a{
     text-align: center;
     margin-bottom: 30px;
 }
-.slider_heading > .container > h2 {
+.slider_heading_font_element {
     font-weight: bold;
     font-size: 40px;
     margin-top: 100px;
     transform: translateY(-50%);
+}
+
+.slider_subheading_font_element {
+    font-family: caviar_dreams;
 }
 
 .category_inner{
