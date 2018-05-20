@@ -62,3 +62,15 @@ function initContactInfo(){
 
     $(".priv_mail").html("<a href='mailto:info@kay-gonschior.de'>info@kay-gonschior.de</a> )<br>");
 }
+
+function validateDownloadPassword(){
+    var pass = prompt("Please enter the password", "");
+
+    if( pass == "education" )
+        return true;
+    else
+    {
+        alert("Wrong password!");
+        return false;
+    }
+}
